@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-requirejs',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink /usr/bin/node
+5 warn package.json api-starter@0.1.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-contrib-requirejs', null ]
+8 verbose cache add name=undefined spec="grunt-contrib-requirejs" args=["grunt-contrib-requirejs",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'grunt-contrib-requirejs',
+9 verbose parsed url   path: 'grunt-contrib-requirejs',
+9 verbose parsed url   href: 'grunt-contrib-requirejs' }
+10 silly lockFile 2d6322b1-grunt-contrib-requirejs grunt-contrib-requirejs
+11 verbose lock grunt-contrib-requirejs /home/shaun/.npm/2d6322b1-grunt-contrib-requirejs.lock
+12 silly lockFile 2d6322b1-grunt-contrib-requirejs grunt-contrib-requirejs
+13 silly lockFile 2d6322b1-grunt-contrib-requirejs grunt-contrib-requirejs
+14 verbose addNamed [ 'grunt-contrib-requirejs', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 28119593-grunt-contrib-requirejs grunt-contrib-requirejs@
+17 verbose lock grunt-contrib-requirejs@ /home/shaun/.npm/28119593-grunt-contrib-requirejs.lock
+18 silly addNameRange { name: 'grunt-contrib-requirejs', range: '*', hasData: false }
+19 verbose registry.get grunt-contrib-requirejs not expired, no request
+20 silly addNameRange number 2 { name: 'grunt-contrib-requirejs', range: '*', hasData: true }
+21 silly addNameRange versions [ 'grunt-contrib-requirejs',
+21 silly addNameRange   [ '0.1.0',
+21 silly addNameRange     '0.2.0',
+21 silly addNameRange     '0.3.0',
+21 silly addNameRange     '0.3.2',
+21 silly addNameRange     '0.3.3',
+21 silly addNameRange     '0.3.4',
+21 silly addNameRange     '0.4.0',
+21 silly addNameRange     '0.4.1',
+21 silly addNameRange     '0.4.2',
+21 silly addNameRange     '0.4.3',
+21 silly addNameRange     '0.4.4',
+21 silly addNameRange     '0.4.0-rc7' ] ]
+22 verbose addNamed [ 'grunt-contrib-requirejs', '0.4.4' ]
+23 verbose addNamed [ '0.4.4', '0.4.4' ]
+24 silly lockFile e2afe6c5-grunt-contrib-requirejs-0-4-4 grunt-contrib-requirejs@0.4.4
+25 verbose lock grunt-contrib-requirejs@0.4.4 /home/shaun/.npm/e2afe6c5-grunt-contrib-requirejs-0-4-4.lock
+26 silly lockFile a8465768-runt-contrib-requirejs-0-4-4-tgz https://registry.npmjs.org/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz
+27 verbose lock https://registry.npmjs.org/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz /home/shaun/.npm/a8465768-runt-contrib-requirejs-0-4-4-tgz.lock
+28 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz',
+28 verbose addRemoteTarball   '87f2165a981e48a45d22f8cc5299d0934031b972' ]
+29 silly lockFile a8465768-runt-contrib-requirejs-0-4-4-tgz https://registry.npmjs.org/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz
+30 silly lockFile a8465768-runt-contrib-requirejs-0-4-4-tgz https://registry.npmjs.org/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz
+31 silly lockFile e2afe6c5-grunt-contrib-requirejs-0-4-4 grunt-contrib-requirejs@0.4.4
+32 silly lockFile e2afe6c5-grunt-contrib-requirejs-0-4-4 grunt-contrib-requirejs@0.4.4
+33 silly lockFile 28119593-grunt-contrib-requirejs grunt-contrib-requirejs@
+34 silly lockFile 28119593-grunt-contrib-requirejs grunt-contrib-requirejs@
+35 error Error: EACCES, mkdir '/home/shaun/tmp/npm-11272-2vQffaIo'
+35 error  { [Error: EACCES, mkdir '/home/shaun/tmp/npm-11272-2vQffaIo']
+35 error   errno: 3,
+35 error   code: 'EACCES',
+35 error   path: '/home/shaun/tmp/npm-11272-2vQffaIo',
+35 error   parent: 'api-starter' }
+36 error Please try running this command again as root/Administrator.
+37 error System Linux 3.8.0-35-generic
+38 error command "/usr/bin/node" "/usr/bin/npm" "install" "grunt-contrib-requirejs" "--save-dev"
+39 error cwd /home/shaun/Development/Source/api-starter
+40 error node -v v0.10.26
+41 error npm -v 1.4.3
+42 error path /home/shaun/tmp/npm-11272-2vQffaIo
+43 error code EACCES
+44 error errno 3
+45 error stack Error: EACCES, mkdir '/home/shaun/tmp/npm-11272-2vQffaIo'
+46 verbose exit [ 3, true ]
