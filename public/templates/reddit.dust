@@ -5,7 +5,7 @@
 		<ul>
 		{#data.children}
 			<li>Title: {data.title}</li>
-			<li>Summary: {data.url}</li>
+			<li>URL: <a href="{data.url}" target="_blank">{data.url}</a></li>
 			<br />
 		{/data.children}
 		</ul>
