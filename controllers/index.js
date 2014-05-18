@@ -6,16 +6,17 @@ var request = require('request');
 
 module.exports = function (app) {
 
-    var model = new IndexModel();
+    var model;
 
 
     app.get('/', function (req, res) {
         
-        var search = request("http://api.songkick.com/api/3.0/search/locations.json?query=austin&apikey=XeObOQWL7THUjh05", function (error, response, body) {
+        var search = request("http://www.reddit.com/r/programming/top.json", function (error, response, body) {
 			if (!error && response.statusCode == 200) {
-		  		console.log(body);
+		  		model = JSON.parse(body);
 			}
+			console.log(model.data.children);
+    		res.render('reddit', model);
 		});
-
     });
 };
