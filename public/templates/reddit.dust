@@ -2,11 +2,11 @@
 
 {<body}
 		<h2>{@pre type="content" key="header"/}</h2>
-		<dl>
 		{#data.children}
-			<dt>{@pre type="content" key="title"/} {data.title}</dt>
-			<dt>{@pre type="content" key="url"/} <a href="{data.url}" target="_blank">{data.url}</a></dt>
-			<br />
+		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
+			<dl>
+				<h2><dt>{data.title}</dt><h2>
+			</dl>
+		</div>
 		{/data.children}
-		</dl>
 {/body}
