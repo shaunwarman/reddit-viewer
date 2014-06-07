@@ -4,9 +4,9 @@
 		<h2>{@pre type="content" key="header"/}</h2>
 		{#data.children}
 		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
-			<dl>
-				<h2><dt>{data.title}</dt><h2>
-			</dl>
+			<tr>
+				<h2><td>{data.title}</td></h2>
+			</tr>
 		</div>
 		{/data.children}
 {/body}
