@@ -6,7 +6,11 @@
 		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
 			<table>
 				<tr>
-					<td>{data.score}</td>
+					{@if cond="'{data.thumbnail}' !== ''"}
+						<td><img src="{data.thumbnail}" height="60" width="60" />{data.score}</td>
+					{:else}
+						<td>{data.score}</td>
+					{/if}
 					<td>{data.title}</td>
 				</tr>
 			</table>
