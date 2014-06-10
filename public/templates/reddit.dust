@@ -1,7 +1,7 @@
 {>"layouts/master" /}
 
 {<body}
-		<h2>{@pre type="content" key="header"/}</h2>
+		<h2>{@pre type="content" key="header"/}{subtitle}</h2>
 		{#data.children}
 		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
 			<table>
