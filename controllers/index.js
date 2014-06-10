@@ -14,9 +14,8 @@ module.exports = function (app) {
 			if (!error && response.statusCode === 200) {
 		  		model = JSON.parse(body);
 			}
-            var subtitle = model.data.children[0].data.subreddit;
-            model.subtitle = subtitle;
-            
+            model.subtitle = topic;
+
     		res.render('reddit', model);
 		});
     });
