@@ -1,3 +1,3 @@
-# api-starter
+# reddit-viewer
 
-"A boilerplate for api interaction in node.js"
+"A simple reddit viewer in node.js"
