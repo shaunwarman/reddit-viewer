@@ -6,7 +6,11 @@
 		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
 			<table>
 				<tr>
-                    <td><img src="{data.thumbnail}" height="100" width="100" /></td>
+                    {@if cond="'{data.thumbnail}' !== 'nsfw'"}
+                        <td><img src="{data.thumbnail}" height="100" width="100" /></td>
+                    {:else}
+                        <td><img src="../img/nsfw.gif" height="100" width="100" /></td>
+                    {/if}
 					<td>{data.title}</td>
 				</tr>
 			</table>
