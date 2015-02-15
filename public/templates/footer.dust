@@ -1,0 +1,13 @@
+{>"layouts/master" /}
+
+{<body}
+    <div id="footer">
+        {! TODO add footer information !}
+        <div id="facebook-icon"><h2>{@pre type="content" key="facebook"/}</h2></div>
+        <div id="twitter-icon"><h2>{@pre type="content" key="twitter"/}</h2></div>
+        <div id="linkedin-icon"><h2>{@pre type="content" key="linkedin"/}</h2></div>
+        <div id="copyright">
+            <h3>{@pre type="content" key="copyright"/}</h3>
+        </div>
+    </div>
+{/body}

@@ -2,18 +2,18 @@
 
 {<body}
 		<h2>{@pre type="content" key="header"/}{subtitle}</h2>
-		{#data.children}
-		<div id="tile" onclick="location.href='{data.url}';" style="cursor:pointer;">
+		{#links}
+		<div id="tile" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
 			<table>
 				<tr>
-                    {@if cond="'{data.thumbnail}' !== 'nsfw'"}
-                        <td><img src="{data.thumbnail}" height="100" width="100" /></td>
+                    {@if cond="'{value.data.thumbnail}' !== 'default'"}
+                        <td><img src="{value.data.thumbnail}" height="100" width="100" /></td>
                     {:else}
-                        <td><img src="../img/nsfw.gif" height="100" width="100" /></td>
+                        <td><img src="../img/reddit.png" height="100" width="100" /></td>
                     {/if}
-					<td>{data.title}</td>
+					<td>{value.data.title}</td>
 				</tr>
 			</table>
 		</div>
-		{/data.children}
+		{/links}
 {/body}
