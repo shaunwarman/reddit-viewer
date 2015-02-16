@@ -11,7 +11,6 @@ module.exports = function (app) {
     var top = "/top";
 
     app.get('/', function (req, res) {
-       console.log('Render homepage');
        res.render('homepage');
     });
 
