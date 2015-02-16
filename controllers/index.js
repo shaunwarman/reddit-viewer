@@ -4,6 +4,7 @@
 var IndexModel = require('../models/index');
 var request = require('request');
 var cleaner = require('../lib/cleaner');
+var url = require('../lib/urlUtil');
 
 module.exports = function (app) {
     var model;
@@ -16,9 +17,17 @@ module.exports = function (app) {
 
     app.get('/:topic', function (req, res) {
         var topic = req.params.topic;
-        var query = "?sort=top&t=week&limit=100"
+        var options = {
+            host: "http://www.reddit.com/r/",
+            topic: req.params.topic,
+            sort: "/top",
+            format: ".json",
+            query: "?sort=top&t=week&limit=100"
+        };
 
-        request("http://www.reddit.com/r/"+topic+top+".json"+query, function (error, response, body) {
+        var requestUrl = url.createUrl(options);
+
+        request(requestUrl, function (error, response, body) {
 			if (!error && response.statusCode === 200) {
 		  		model = JSON.parse(body);
 			}
