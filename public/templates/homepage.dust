@@ -1,10 +1,12 @@
 {>"layouts/master" /}
 
 {<body}
-    <form id="homepage-form" class="form-inline">
+    <h2>Reddit weekly</h2>
+    <form id="homepage-form" class="form-inline" method="post" action="homepage-redirect">
       <div class="form-group">
-        <input type="text" class="form-control" id="subreddit" placeholder="Subreddit...">
+        <input type="text" class="form-control" name="subreddit" id="subreddit" placeholder="Subreddit...">
       </div>
       <button type="submit" class="btn btn-primary btn-default">Search</button>
+    <input type="hidden" name="_csrf" value="{_csrf}" />
     </form>
 {/body}

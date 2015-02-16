@@ -14,6 +14,11 @@ module.exports = function (app) {
        res.render('homepage');
     });
 
+    app.post('/homepage-redirect', function (req, res) {
+       var topic = req.body.subreddit;
+       res.redirect('/'+topic);
+    });
+
     app.get('/:topic', function (req, res) {
         var topic = req.params.topic;
         var options = {
@@ -30,7 +35,6 @@ module.exports = function (app) {
 			if (!error && response.statusCode === 200) {
 		  		model = JSON.parse(body);
 			}
-            model.subtitle = topic;
 
             cleaner.filterLinks(model, function(links) {
                 model.links = links;
