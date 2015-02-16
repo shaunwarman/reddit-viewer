@@ -9,6 +9,11 @@ module.exports = function (app) {
     var model;
     var top = "/top";
 
+    app.get('/', function (req, res) {
+       console.log('Render homepage');
+       res.render('homepage');
+    });
+
     app.get('/:topic', function (req, res) {
         var topic = req.params.topic;
         var query = "?sort=top&t=week&limit=100"
