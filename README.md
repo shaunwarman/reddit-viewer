@@ -9,3 +9,4 @@ cd reddit-viewer
 npm install
 node .
 ```
+localhost:8000/<subreddit>

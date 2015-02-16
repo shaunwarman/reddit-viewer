@@ -2,5 +2,7 @@
 
 
 requirejs.config({
-    paths: {}
+    paths: {
+        'jquery': 'lib/jquery-1.8.3'
+    }
 });

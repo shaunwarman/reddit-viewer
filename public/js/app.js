@@ -2,15 +2,17 @@
 
 
 
-require(['config' /*, Dependencies */], function (config) {
+require(['config'], function (config) {
+    require(['jquery'], function ($) {
 
-    var app = {
-        initialize: function () {
-            // Your code here
-        }
-    };
+        var app = {
+            initialize: function () {
 
-    app.initialize();
+            }
+        };
+
+        app.initialize();
+    });
 
 });
 

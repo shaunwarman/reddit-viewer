@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<body}
+    <form id="homepage-form" class="form-inline">
+      <div class="form-group">
+        <input type="text" class="form-control" id="subreddit" placeholder="Subreddit...">
+      </div>
+      <button type="submit" class="btn btn-primary btn-default">Search</button>
+    </form>
+{/body}
