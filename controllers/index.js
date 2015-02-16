@@ -16,11 +16,10 @@ module.exports = function (app) {
         request("http://www.reddit.com/r/"+topic+top+".json"+query, function (error, response, body) {
 			if (!error && response.statusCode === 200) {
 		  		model = JSON.parse(body);
-                console.log(model);
 			}
             model.subtitle = topic;
 
-            var articles = cleaner.filterLinks(model, function(links) {
+            cleaner.filterLinks(model, function(links) {
                 model.links = links;
                 res.render('reddit', model);
             });

@@ -1,19 +1,19 @@
 {>"layouts/master" /}
 
 {<body}
-		<h2>{@pre type="content" key="header"/}{subtitle}</h2>
-		{#links}
-		<div id="tile" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
-			<table>
-				<tr>
-                    {@if cond="'{value.data.thumbnail}' !== 'default'"}
-                        <td><img src="{value.data.thumbnail}" height="100" width="100" /></td>
-                    {:else}
-                        <td><img src="../img/reddit.png" height="100" width="100" /></td>
-                    {/if}
-					<td>{value.data.title}</td>
-				</tr>
-			</table>
-		</div>
-		{/links}
+    <h2>{@pre type="content" key="header"/}{subtitle}</h2>
+    {#links}
+    <div id="tile" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
+        <table>
+            <tr>
+                {@if cond="'{value.data.thumbnail}' !== 'default'"}
+                    <td><img src="{value.data.thumbnail}" height="100" width="100" /></td>
+                {:else}
+                    <td><img src="../img/reddit.png" height="100" width="100" /></td>
+                {/if}
+                <td>{value.data.title}</td>
+            </tr>
+        </table>
+    </div>
+    {/links}
 {/body}
