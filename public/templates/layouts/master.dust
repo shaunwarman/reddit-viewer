@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/app.css" />
-</head>
-<body>
-<div id="wrapper">
-    {+body /}
-</div>
-<script data-main="js/app" src="components/requirejs/require.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            {+body /}
+        </div>
+        <script data-main="js/app" src="components/requirejs/require.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    </body>
 </html>
