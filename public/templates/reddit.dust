@@ -3,17 +3,17 @@
 {<body}
     <h2>{@pre type="content" key="header"/}{subtitle}</h2>
     {#links}
-    <div id="tile" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
-        <table>
-            <tr>
-                {@if cond="'{value.data.thumbnail}' !== 'default'"}
-                    <td><img src="{value.data.thumbnail}" height="100" width="100" /></td>
-                {:else}
-                    <td><img src="../img/reddit.png" height="100" width="100" /></td>
-                {/if}
-                <td>{value.data.title}</td>
-            </tr>
-        </table>
-    </div>
+        <div id="tile" class="col s12 m2 z-depth-3" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
+            <table>
+                <tr class="z-depth-3">
+                    {@if cond="'{value.data.thumbnail}' !== 'default'"}
+                        <td><img class="responsive-img" src="{value.data.thumbnail}" height="100" width="100" /></td>
+                    {:else}
+                        <td><img class="responsive-img" src="../img/reddit.png" height="100" width="100" /></td>
+                    {/if}
+                    <td>{value.data.title}</td>
+                </tr>
+            </table>
+        </div>
     {/links}
 {/body}
