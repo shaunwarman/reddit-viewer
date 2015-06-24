@@ -1,6 +1,5 @@
 'use strict';
 
-
 var IndexModel = require('../models/index');
 var request = require('request');
 var cleaner = require('../lib/cleaner');
@@ -32,15 +31,15 @@ module.exports = function (app) {
         var requestUrl = url.createUrl(options);
 
         request(requestUrl, function (error, response, body) {
-			if (!error && response.statusCode === 200) {
-		  		model = JSON.parse(body);
-			}
+    			if (!error && response.statusCode === 200) {
+    		  		model = JSON.parse(body);
+    			}
 
-            cleaner.filterLinks(model, function(links) {
-                model.links = links;
-                res.render('reddit', model);
-            });
-		});
+          cleaner.filterLinks(model, function(links) {
+              model.links = links;
+              res.render('reddit', model);
+          });
+         });
 
     });
 };
