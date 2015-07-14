@@ -39,7 +39,7 @@ module.exports = function (app) {
               model.links = links;
               res.render('reddit', model);
           });
-         });
+        });
 
     });
 };
