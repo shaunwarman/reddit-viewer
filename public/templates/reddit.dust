@@ -1,7 +1,6 @@
 {>"layouts/master" /}
 
 {<body}
-    <h2>{@pre type="content" key="header"/}{subtitle}</h2>
     {#links}
         <div id="tile" class="col s12 m2 z-depth-3" onclick="location.href='{value.data.url}';" style="cursor:pointer;">
             <table>
